@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="date"></p>
+    <script>
+
+        let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
+        let div3 = document.createElement("div");
+        let body = document.body;
+
+        body.setAttribute("id", "body");
+        body.style.position = "absolute";
+        body.style.top = "50%";
+        body.style.left = "50%";
+        body.style.transform = "translate(-50%, -50%)";
+
+        div1.setAttribute("id", "div1")
+        div1.style.width = "300px";
+        div1.style.height = "300px";
+        div1.style.display = "flex";
+        div1.style.justifyContent = "center";
+        div1.style.alignItems = "center";
+        div1.style.backgroundColor = "green";
+
+        div2.setAttribute("id", "div2")
+        div2.style.width = "200px";
+        div2.style.height = "200px";
+        div2.style.display = "flex";
+        div2.style.justifyContent = "center";
+        div2.style.alignItems = "center";
+        div2.style.backgroundColor = "red";
+
+        div3.setAttribute("id", "div3")
+        div3.style.width = "100px";
+        div3.style.height = "100px";
+        div3.style.backgroundColor = "blue";
+
+        div1.appendChild(div2);
+        div2.appendChild(div3);
+        body.appendChild(div1);
+    </script>
+</body>
+
+</html>

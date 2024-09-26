@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: beige;
+  padding: 20px;
+}
+
+nav a {
+  font-size: larger;
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+} */
+
+nav a:hover {
+  color: red;
+}

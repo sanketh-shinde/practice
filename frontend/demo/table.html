@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - JS</title>
+    <style>
+        table, tr, td, th{
+            border: 2px solid black;
+            border-collapse:  collapse;
+            padding: 5px;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #807a7a;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" placeholder="enter emp no" id="empId" /> <br /> <br />
+    <input type="text" placeholder="enter emp name" id="empName" /> <br /> <br />
+    <select id="empDept">
+        <option value="#" selected>Select Department</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="MERN">MERN</option>
+    </select> <br /> <br />
+    <input type="text" placeholder="enter emp location" id="empLoc" /> <br /> <br />
+    <input type="number" placeholder="enter emp salary" id="empSal" /> <br /> <br />
+    <button id="submit">Submit</button> 
+    <button id="reset">Reset</button>
+    <br /> <br />
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Location</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="table.js"></script>
+</body>
+</html>

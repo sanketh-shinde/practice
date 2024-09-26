@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#dark {
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+}
+
+#display {
+  width: 500px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+p {
+  margin: 5px 20px;
+}
+
+.item:nth-child(odd) {
+  background-color: lightblue;
+}
+
+.item:nth-child(even) {
+  background: lightpink;
+}
